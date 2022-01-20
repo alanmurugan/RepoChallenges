@@ -41,7 +41,7 @@ namespace MenuItemsTests
             _repo.AddMenuItem(itemTwo);
             _repo.AddMenuItem(itemThree);
             //Act
-            List<MenuItem> result = _repo.GetContents();
+            List<MenuItem> result = _repo.GetMenuItems();
             //Assert
             Assert.AreEqual(3, result.Count);
         }
@@ -59,7 +59,7 @@ namespace MenuItemsTests
             _repo.AddMenuItem(itemThree);
             //Act
             _repo.DeleteMenuItem(_item);
-            List<MenuItem> result = _repo.GetContents();
+            List<MenuItem> result = _repo.GetMenuItems();
             //Assert
             Assert.IsFalse(result.Contains(_item));
         }

@@ -22,7 +22,7 @@ namespace CafeLibrary
         }
         //READ
         //See All Menu Items
-        public List<MenuItem> GetContents()
+        public List<MenuItem> GetMenuItems()
         {
             return _repo;
         }
