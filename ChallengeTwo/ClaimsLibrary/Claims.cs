@@ -10,7 +10,8 @@ namespace ClaimsLibrary
     }
     public class Claim
     {
-        public Claim( int claimID, ClaimType claimType, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim /*isValid is dateOfClaim - dateOfIncident < 30 days*/)
+        public Claim() {}
+        public Claim(int claimID, ClaimType claimType, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim /*isValid is dateOfClaim - dateOfIncident < 30 days*/)
         {
             ClaimID = claimID;
             ClaimType = claimType;
