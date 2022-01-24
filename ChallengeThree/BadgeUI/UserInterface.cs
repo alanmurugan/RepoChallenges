@@ -78,12 +78,12 @@ namespace BadgeUI
             Console.Clear();
             System.Console.WriteLine("What Badge ID Number needs updating?: ");
             int inputBadgeID = int.Parse(Console.ReadLine());
+            System.Console.WriteLine();
             
         }
 
         private void ShowAllBadges(){
             Console.Clear();
-            System.Console.WriteLine();
         }
         private void SeedContent()
         {
