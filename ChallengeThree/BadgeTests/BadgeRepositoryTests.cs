@@ -39,7 +39,7 @@ namespace BadgeTests
         [TestMethod]
         public void AddDoorToBadge_ShouldReturnCorrectDoor()
         {
-            _badge = new Badge(1, new List<string> { }, null);
+            _badge = new Badge(1, null, null);
             _repo = new BadgeRepository();
             _repo.AddBadge(_badge);
             _repo.AddDoor(_badge, "A5");
